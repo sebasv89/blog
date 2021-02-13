@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+    <!-- so meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <meta name="description" content="My Rating: 4&#x2F;5What I like about the bookThere are two facts you can’t deny about google: They face complex challenges, at scale, and they usually have an interesting way of running their business.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Software Engineering at Google">
+<meta property="og:url" content="http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/index.html">
+<meta property="og:site_name" content="My Writings">
+<meta property="og:description" content="My Rating: 4&#x2F;5What I like about the bookThere are two facts you can’t deny about google: They face complex challenges, at scale, and they usually have an interesting way of running their business.">
+<meta property="og:locale" content="en_US">
+<meta property="og:image" content="http://sebastianvelez.xyz/images/seatg.jpg">
+<meta property="article:published_time" content="2020-06-22T05:01:53.000Z">
+<meta property="article:modified_time" content="2021-02-13T17:31:20.253Z">
+<meta property="article:author" content="SV">
+<meta property="article:tag" content="BookReview">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://sebastianvelez.xyz/images/seatg.jpg">
+    
+    
+        
+          
+              <link rel="shortcut icon" href="/images/coffee-icon.png">
+          
+        
+        
+          
+            <link rel="icon" type="image/png" href="/images/coffee-icon.png" sizes="192x192">
+          
+        
+        
+          
+            <link rel="apple-touch-icon" sizes="180x180" href="/images/coffee-icon.png">
+          
+        
+    
+    <!-- title -->
+    <title>Software Engineering at Google</title>
+    <!-- styles -->
+    
+<link rel="stylesheet" href="/css/style.css">
+
+    <!-- rss -->
+    
+    
+<meta name="generator" content="Hexo 4.2.1"></head>
+
+<body>
+    
+      <div id="header-post">
+  <a id="menu-icon" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="menu-icon-tablet" href="#"><i class="fa fa-bars fa-lg"></i></a>
+  <a id="top-icon-tablet" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');" style="display:none;"><i class="fa fa-chevron-up fa-lg"></i></a>
+  <span id="menu">
+    <span id="nav">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </span>
+    <br/>
+    <span id="actions">
+      <ul>
+        
+        <li><a class="icon" href="/2021/02/13/Intro/"><i class="fa fa-chevron-left" aria-hidden="true" onmouseover="$('#i-prev').toggle();" onmouseout="$('#i-prev').toggle();"></i></a></li>
+        
+        
+        <li><a class="icon" href="/2020/06/15/WhenMicroservices/"><i class="fa fa-chevron-right" aria-hidden="true" onmouseover="$('#i-next').toggle();" onmouseout="$('#i-next').toggle();"></i></a></li>
+        
+        <li><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up" aria-hidden="true" onmouseover="$('#i-top').toggle();" onmouseout="$('#i-top').toggle();"></i></a></li>
+        <li><a class="icon" href="#"><i class="fa fa-share-alt" aria-hidden="true" onmouseover="$('#i-share').toggle();" onmouseout="$('#i-share').toggle();" onclick="$('#share').toggle();return false;"></i></a></li>
+      </ul>
+      <span id="i-prev" class="info" style="display:none;">Previous post</span>
+      <span id="i-next" class="info" style="display:none;">Next post</span>
+      <span id="i-top" class="info" style="display:none;">Back to top</span>
+      <span id="i-share" class="info" style="display:none;">Share post</span>
+    </span>
+    <br/>
+    <div id="share" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/" target="_blank" rel="noopener"><i class="fa fa-facebook " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&text=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-twitter " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-linkedin " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&is_video=false&description=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-pinterest " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Software Engineering at Google&body=Check out this article: http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/"><i class="fa fa-envelope " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-get-pocket " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-reddit " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-stumbleupon " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-digg " aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&name=Software Engineering at Google&description=" target="_blank" rel="noopener"><i class="fa fa-tumblr " aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+    <div id="toc">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#My-Rating-4-5"><span class="toc-number">1.</span> <span class="toc-text">My Rating: 4&#x2F;5</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#What-I-like-about-the-book"><span class="toc-number">1.1.</span> <span class="toc-text">What I like about the book</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-3-takeaways"><span class="toc-number">1.2.</span> <span class="toc-text">My 3 takeaways</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I-recommend-this-book-for"><span class="toc-number">1.3.</span> <span class="toc-text">I recommend this book for:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Links"><span class="toc-number">1.4.</span> <span class="toc-text">Links:</span></a></li></ol></li></ol>
+    </div>
+  </span>
+</div>
+
+    
+    <div class="content index width mx-auto px2 my4">
+        
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+  <header>
+    
+    <h1 class="posttitle" itemprop="name headline">
+        Software Engineering at Google
+    </h1>
+
+
+
+    <div class="meta">
+      <span class="author" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <span itemprop="name">My Writings</span>
+      </span>
+      
+    <div class="postdate">
+        <time datetime="2020-06-22T05:01:53.000Z" itemprop="datePublished">2020-06-22</time>
+    </div>
+
+
+      
+    <div class="article-tag">
+        <i class="fa fa-tag"></i>
+        <a class="tag-link" href="/tags/BookReview/" rel="tag">BookReview</a>
+    </div>
+
+
+    </div>
+  </header>
+  
+
+  <div class="content" itemprop="articleBody">
+    <img src="/images/seatg.jpg" class="center" width="200" height="200">
+
+
+<h1 id="My-Rating-4-5"><a href="#My-Rating-4-5" class="headerlink" title="My Rating: 4/5"></a>My Rating: 4/5</h1><h2 id="What-I-like-about-the-book"><a href="#What-I-like-about-the-book" class="headerlink" title="What I like about the book"></a>What I like about the book</h2><p>There are two facts you can’t deny about google: They face complex challenges, at scale, and they usually have an interesting way of running their business. I have recently read at least 5 books looking for insight on software engineering at scale, and this latest book, “Software Engineering at Google”, is probably one of my favorites.</p>
+<p>If you are familiar with other well known titles such as TODO, TODO, AND TODO, you will find the format familiar: A collection of essays, that you can read in any order and where you probably will find some chapters more interesting than others. You may think with such a generic title that this book is all about repeating software engineering concepts. I was a bit hesitant to read this book at the beginning. However, I found it really insightful to know Google perspectives on Leadership, Testing, Running infrastructure, Managing communication and more.</p>
+<h2 id="My-3-takeaways"><a href="#My-3-takeaways" class="headerlink" title="My 3 takeaways"></a>My 3 takeaways</h2><ol>
+<li>I loved all concepts about leading at scale: “ask yourself a different critical question: What can I do that nobody else on my team can do?” summarizes the essence of these subset of chapters. Really good stuff about delegating, empowering, guiding a high level vision, and so on.</li>
+<li>It’s all about tradeoffs: Complex decisions always involve favoring some qualities and relegating other qualities. Knowing your tradeoffs and seeing the holistic view is key.</li>
+<li>The “Beyonce rule” for testing: If you care about a feature, you need to add a test to protect it. Developers own quality, and is not a fault of an infrastructure/testing team if your feature is not working</li>
+</ol>
+<h2 id="I-recommend-this-book-for"><a href="#I-recommend-this-book-for" class="headerlink" title="I recommend this book for:"></a>I recommend this book for:</h2><p>Developers getting into the tech leadership world, as well as leaders working on a tech organization facing scaling issues. Google is always a must-know reference, and this book gets added as one of my favorites.</p>
+<h2 id="Links"><a href="#Links" class="headerlink" title="Links:"></a>Links:</h2><a href="http://www.goodreads.com/book/show/48816586-software-engineering-at-google" title="" target="">GoodReads</a>, <a href="https://www.amazon.com/-/es/Software-Engineering-Google-Lessons-Programming/dp/1492082791/" title="" target="">Amazon</a>
+
+
+
+  </div>
+</article>
+
+
+
+    </div>
+    
+      <div id="footer-post-container">
+  <div id="footer-post">
+
+    <div id="nav-footer" style="display: none">
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </div>
+
+    <div id="toc-footer" style="display: none">
+      <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#My-Rating-4-5"><span class="toc-number">1.</span> <span class="toc-text">My Rating: 4&#x2F;5</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#What-I-like-about-the-book"><span class="toc-number">1.1.</span> <span class="toc-text">What I like about the book</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#My-3-takeaways"><span class="toc-number">1.2.</span> <span class="toc-text">My 3 takeaways</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#I-recommend-this-book-for"><span class="toc-number">1.3.</span> <span class="toc-text">I recommend this book for:</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Links"><span class="toc-number">1.4.</span> <span class="toc-text">Links:</span></a></li></ol></li></ol>
+    </div>
+
+    <div id="share-footer" style="display: none">
+      <ul>
+  <li><a class="icon" href="http://www.facebook.com/sharer.php?u=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/" target="_blank" rel="noopener"><i class="fa fa-facebook fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://twitter.com/share?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&text=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-twitter fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.linkedin.com/shareArticle?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-linkedin fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://pinterest.com/pin/create/bookmarklet/?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&is_video=false&description=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-pinterest fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="mailto:?subject=Software Engineering at Google&body=Check out this article: http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/"><i class="fa fa-envelope fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="https://getpocket.com/save?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-get-pocket fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://reddit.com/submit?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-reddit fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.stumbleupon.com/submit?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-stumbleupon fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://digg.com/submit?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&title=Software Engineering at Google" target="_blank" rel="noopener"><i class="fa fa-digg fa-lg" aria-hidden="true"></i></a></li>
+  <li><a class="icon" href="http://www.tumblr.com/share/link?url=http://sebastianvelez.xyz/2020/06/22/BR-SoftEngAtGoogle/&name=Software Engineering at Google&description=" target="_blank" rel="noopener"><i class="fa fa-tumblr fa-lg" aria-hidden="true"></i></a></li>
+</ul>
+
+    </div>
+
+    <div id="actions-footer">
+      <ul>
+        <li id="toc"><a class="icon" href="#" onclick="$('#toc-footer').toggle();return false;"><i class="fa fa-list fa-lg" aria-hidden="true"></i> TOC</a></li>
+        <li id="share"><a class="icon" href="#" onclick="$('#share-footer').toggle();return false;"><i class="fa fa-share-alt fa-lg" aria-hidden="true"></i> Share</a></li>
+        <li id="top" style="display:none"><a class="icon" href="#" onclick="$('html, body').animate({ scrollTop: 0 }, 'fast');"><i class="fa fa-chevron-up fa-lg" aria-hidden="true"></i> Top</a></li>
+        <li id="menu"><a class="icon" href="#" onclick="$('#nav-footer').toggle();return false;"><i class="fa fa-bars fa-lg" aria-hidden="true"></i> Menu</a></li>
+      </ul>
+    </div>
+
+  </div>
+</div>
+
+    
+    <footer id="footer">
+  <div class="footer-left">
+      </div>
+  <div class="footer-right">
+    <nav>
+      <ul>
+         
+          <li><a href="/">Home</a></li>
+         
+          <li><a href="/about/">About</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</footer>
+
+</body>
+</html>
+<!-- styles -->
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<link rel="stylesheet" href="/lib/meslo-LG/styles.css">
+
+
+<link rel="stylesheet" href="/lib/justified-gallery/justifiedGallery.min.css">
+
+
+<!-- jquery -->
+
+<script src="/lib/jquery/jquery.min.js"></script>
+
+
+<script src="/lib/justified-gallery/jquery.justifiedGallery.min.js"></script>
+
+
+<script src="/js/main.js"></script>
+
+
+
+    <!-- Google Analytics -->
+    <script type="text/javascript">
+        (function(i,s,o,g,r,a,m) {i['GoogleAnalyticsObject']=r;i[r]=i[r]||function() {
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-37473492-6', 'auto');
+        ga('send', 'pageview');
+    </script>
+
+
+
